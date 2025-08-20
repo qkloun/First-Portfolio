@@ -1,0 +1,193 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="./design.css">
+        <script src="https://kit.fontawesome.com/dff9d69082.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+        <section id="home">
+            <div class="container">
+                <nav>
+                    <img src ="images/mask.jpeg" class="logo">
+                        <ul id="menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <!---Theme switch button-->
+                            <li>
+                            <button id="theme-switch">
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                            </button>
+                            </li>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="home-row">
+                    <div class="header-text">
+
+                        <p><span class="auto-type"></span></p>
+                        <h1>Hi, I'm <span> Yunus </span><br>Karatas from Florida</h1>
+                        <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/yunus-karatas/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://github.com/qkloun"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/qkloun/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="images/Concept.jpeg" download><i class="fa-regular fa-file"></i></a>
+                            </div>
+                    </div>
+                    <!----Home photo-->
+                    <div class="home-photo">
+                        <img src="images/wonder.png" id="wonderimg">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+<!-------------About----------->
+        <section id="about">
+            <div class = "container">
+                <div class="row">
+                    <div class="about-col-1">
+
+                        <div class="timeline-tabs">
+                            <p class="tab-links active-link" onclick="opentab(event,'work')">Work</p>
+                            <p class="tab-links" onclick="opentab(event,'studies')">Studies</p>
+                        </div>
+
+                            <!-- Work Timeline -->
+                        <div class="tab-contents active-tab" id="work">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">🏢</div>
+                                    <div class="timeline-content">
+                                        <span class="date">Sep 2023 - Current</span>
+                                        <h3>Secretary at SetKitchens</h3>
+                                        <p>Administrative support and scheduling.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">💻</div>
+                                    <div class="timeline-content">
+                                        <span class="date">Jun 2023 - Jul 2023</span>
+                                        <h3>Shadow at OpenBots</h3>
+                                        <p>Observed RPA workflow development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <!-- Studies Timeline -->
+                            <div class="tab-contents" id="studies">
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                <div class="timeline-icon">🎓</div>
+                                <div class="timeline-content">
+                                    <span class="date">Jun 2022 - May 2026</span>
+                                    <h3>Florida Atlantic University</h3>
+                                    <p>B.Sc. in Computer Science (Minor in Data Science & AI)</p>
+                                </div>
+                                </div>
+                                <div class="timeline-item">
+                                <div class="timeline-icon">🏫</div>
+                                <div class="timeline-content">
+                                    <span class="date">Jun 2022</span>
+                                    <h3>Cooper City High School</h3>
+                                    <p>High School Diploma</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!---ABOUT COLUMN 2-->
+                    <div class ="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>
+                            I’m a Computer Science B.S. student with a minor in Data Science and AI, 
+                            passionate about building efficient software and applying data-driven solutions
+                            to real-world problems. I’m eager to contribute my skills in programming, 
+                            data analysis, and machine learning to innovative projects and fast-growing teams.
+                        </p>
+
+                        <div class="skills">
+                            <p>Skills</p>
+                            <ul>
+                                <li><span>Coding languages</span><br>C, Python, R, SQL, C++, Swift, HTML, CSS, JS</li>
+                                <li><span>Data Science and analytics</span><br>Tensor Flow, Pandas</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-------------Projects----------->
+        <section id="projects">
+            <div class="container">
+                <h1 class="subtitle">Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/text.jpg">
+                        <div class="layer">
+                            <h3>Plantus AI</h3>
+                            <p>AI-driven solution for plant health monitoring using TensorFlow, implementing image processing and deep learning techniques to detect and classify plant issues such as diseases and nutrient deficiencies.</p>
+                            <a href="#"><i class="fa-solid fa-seedling"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/text.jpg">
+                        <div class="layer">
+                            <h3>Algorithm visualizer</h3>
+                            <p>An interactive simulator using SDL2 that visualizes sorting algorithms, and their efficiency Developed skills in algorithm analysis and graphical interfaces.</p>
+                            <a href="#"><i class="fa-solid fa-book-open-reader"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/text.jpg">
+                        <div class="layer">
+                            <h3>Algorithm performance tool</h3>
+                            <p>Project made to compare the performance of algorithms by comparing their empirical runtimes, analyzing their complexities, and generating results in a file.</p>
+                            <a href="#"><i class="fa-solid fa-table-cells"></i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-------------Contact----------->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact">
+                        <h1 class="subtitle">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>karatasyunus@icloud.com</p>
+                        <p><i class="fa-solid fa-phone"></i>786-774-2700</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/yunus-karatas/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/qkloun"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/qkloun/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/Concept.jpeg" download class="btn btn2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!---------Autoscroll script library-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="script.js" defer></script>
+    </body>
+</html>
+
+
+
+<!------Things I've used AI on:
+Sticky navbar
+Theme button working
+when I couldnt figure out syntax or why smth was out of place.
+Swiitching wonder from daytime to nighttime
+Scrollspy
+-->

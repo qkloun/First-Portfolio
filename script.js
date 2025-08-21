@@ -9,10 +9,10 @@ const enabledarkmode = () =>{
 
 const disabledarkmode = () =>{
     document.body.classList.remove("darkmode")
-    localStorage.removeItemItem("darkmode")
+    localStorage.removeItem("darkmode")
 }
 
-if(localStorage.getItem("darkmode") === "actiive"){
+if(localStorage.getItem("darkmode") === "active"){
     enabledarkmode();
 }
 

@@ -21,11 +21,13 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - HTML
 
 ## Sections
+| Section | Description | 
+|----------|----------|
+| Home    | N/A     |
+| About    | N/A     |
+| Projects    | N/A     |
+| Contact    | N/A     |
 
-- **Home** - Welcome section with animated introduction
-- **About** - Personal background and skills
-- **Projects** - Showcase of development projects
-- **Experience** - Work experience and education
-- **Skills** - Technical skills and proficiencies
-- **Contact** - Get in touch form and social links
+## Contributing
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the visualization or add new features.
 
